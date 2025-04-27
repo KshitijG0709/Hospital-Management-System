@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - MediCare Hospital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="loginEmail">Email</label>
+                <input type="email" id="loginEmail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="loginPassword">Password</label>
+                <input type="password" id="loginPassword" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <div class="toggle-link">
+            <span>Don't have an account? <a href="#register" onclick="toggleForms()">Register</a></span>
+        </div>
+    </div>
+
+    <div class="container" id="register" style="display:none;">
+        <h2>Register</h2>
+        <form id="registerForm">
+            <div class="form-group">
+                <label for="registerName">Full Name</label>
+                <input type="text" id="registerName" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="registerEmail">Email</label>
+                <input type="email" id="registerEmail" class="form-control" required>
+            </div>
+            <div class="form-group">
+                <label for="registerPassword">Password</label>
+                <input type="password" id="registerPassword" class="form-control" required>
+            </div>
+            <button type="submit" class="btn">Register</button>
+        </form>
+        <div class="toggle-link">
+            <span>Already have an account? <a href="#login" onclick="toggleForms()">Login</a></span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
